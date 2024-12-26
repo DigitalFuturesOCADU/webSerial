@@ -1,5 +1,5 @@
 # WebSerial Servo Examples
-These examples show various methods for controlling Servos from P5 using the [p5.webserial](https://github.com/gohai/p5.webserial) library. It sends the data a comma separated values to arduino.
+These examples show various methods for controlling Servos from P5 using the [p5.webserial](https://github.com/gohai/p5.webserial) library. It sends data as comma separated values to Arduino.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -7,10 +7,18 @@ These examples show various methods for controlling Servos from P5 using the [p5
   - [Prepare The Servo](#prepare-the-servo)
   - [Circuit Powering from MicroUSB](#circuit-powering-from-microusb)
   - [Circuit Powering from USB-C](#circuit-powering-from-usb-c)
+  - [Testing the Connection](#testing-the-connection)
 - [Arduino Code for Examples](#arduino-code-for-examples)
 - [P5 Webserial Examples](#p5-webserial-examples)
   - [Example 1 - Mouse Position X Y to Servo Rotation](#example-1---mouse-position-x-y-to-servo-rotation)
-  - [Example 2 - Mouse Position X](#example-2---mouse-position-x)
+  - [Example 2 - Mouse Position X to Servo Wiggle](#example-2---mouse-position-x-to-servo-wiggle)
+  - [Example 3 - Timing and Motion](#example-3---timing-and-motion)
+
+## Hardware Requirements
+- Arduino board (Nano 33 IoT recommended)
+- Servo motors (1-4)
+- Jumper wires (3 per servo)
+- Power source (USB-C or MicroUSB)
 
 ## Introduction
 
@@ -23,7 +31,7 @@ These examples will establish basic control and wiring methods used for controll
 
 ## Connecting Servos to Arduino + Power
 
-These example require that you connect your servos both to your arduino and external power. If you have not previously review pages:
+These examples require that you connect your servos both to your Arduino and external power. 
 
 ### Prepare The Servo
 
@@ -36,26 +44,24 @@ For a list of servo components and terms consult: [servoComponents-1.jpg](/image
   * ***The GND of the external power must be connected to a GND pin of the Arduino
 
 ### Circuit Powering from MicroUSB
-[Servo-usbMicro_withPlug.png](/images/Servo-usbMicro_withPlug.png)
 
-![Circuit diagram for MicroUSB](/images/Servo-usbMicro_withPlug.png)
+<img src="/images/Servo-usbMicro_withPlug.png" alt="Circuit diagram for MicroUSB" width="400"/>
 
 ### Circuit Powering from USB-C
-[Servo-usbC_withPlug.png](/images/Servo-usbC_withPlug.png)
 
-![Circuit diagram for USB-C](/images/Servo-usbC_withPlug.png)
+<img src="/images/Servo-usbC_withPlug.png" alt="Circuit diagram for USB-C" width="400"/>
 
-![Servo Connection](/images/ServoConnection.png)
+<img src="/images/ServoConnection.png" alt="Servo Connection" width="400"/>
 
 ### Testing the Connection
 
-To test that your servos are connected properly, download the following code and upload it to your Arduino. This is a slightly modified version of the built-in Sweep example
+To test that your servos are connected properly, download the following code and upload it to your Arduino. This is a slightly modified version of the built-in Sweep example.
 
 [TEST CODE LINK](https://github.com/DigitalFuturesOCADU/CC2024/blob/main/experiment3/examples/SweepTest/SweepTest.ino)
 
 ## Arduino Code for Examples
 
-This code allows you to send data from P5 to Arduino to control between 1 - 4 Servos.(If you need more servos it can be easily updated). It uses the same comma separated value (CSV) format as the previous examples. It is important to remember that servos can only respond to values between 0 - 180 so the code needs to ensure it stays within that range.
+This code allows you to send data from P5 to Arduino to control between 1 - 4 Servos (if you need more servos it can be easily updated). It uses the same comma separated value (CSV) format as the previous examples. It is important to remember that servos can only respond to values between 0 - 180 so the code needs to ensure it stays within that range.
 
 ```javascript
 function sendDataToArduino() {
@@ -65,7 +71,7 @@ function sendDataToArduino() {
 }
 ```
 
-This code works for all examples. Download the following code and upload it to your Arduino
+This code works for all examples. Download the following code and upload it to your Arduino:
 
 [Arduino-P5 Servo Code LINK](https://github.com/DigitalFuturesOCADU/CC2024/blob/main/experiment3/examples/example2_controlServos/webSerial_4Servo_CSV/webSerial_4Servo_CSV.ino)
 
