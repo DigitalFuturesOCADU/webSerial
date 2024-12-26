@@ -16,7 +16,6 @@ These examples show various methods for controlling LEDs from P5 using the [p5.w
   - [Example 4 - Window Position](#example-4---window-position)
   - [Example 5 - Mouse Fade](#example-5---mouse-fade)
   - [Example 6 - Body Point Brightness](#example-6---body-point-brightness)
-  - [Example 7 - Body Point Fade](#example-7---body-point-fade)
 
 ## WebSerial
 
@@ -123,9 +122,3 @@ Control Method:
 * UP / DOWN arrow keys change the point being tracked
 * Spacebar Shows/Hides the video
 
-### Example 7 - Body Point Fade
-
-[LINK](https://editor.p5js.org/npuckett/full/u67VBvkzn)
-
-Control Method:
-* Uses the X position value to determine which LEDs to fade up/down
