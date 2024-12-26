@@ -13,6 +13,7 @@ These examples show various methods for controlling Servos from P5 using the [p5
   - [Example 1 - Mouse Position X Y to Servo Rotation](#example-1---mouse-position-x-y-to-servo-rotation)
   - [Example 2 - Mouse Position X to Servo Wiggle](#example-2---mouse-position-x-to-servo-wiggle)
   - [Example 3 - Timing and Motion](#example-3---timing-and-motion)
+  - [Example 4 - Nose Point](#example-4---nose-point)
 
 ## Hardware Requirements
 - Arduino board (Nano 33 IoT recommended)
@@ -102,3 +103,14 @@ Controls:
 * X,Y position of mouse controls Servo Value on Click
 * When clicked the servo moves to the new angle in the amount of time specified by its servo?Speed value
 * A Servo class is created to manage the more complex controls
+
+### Example 4 - Nose Point
+[LINK](https://editor.p5js.org/npuckett/sketches/hMLZ2Xmzg)
+
+Controls:
+* Uses ML5 body pose detection with MoveNet to track nose position
+* X position of nose controls servo angle (mapped to 0-180 degrees)
+* Arrow keys to cycle through different body points (0-16)
+* Spacebar toggles video display
+* Visual feedback shows target position and current servo angle
+* Configurable servo range with SERVO_MIN and SERVO_MAX constants
