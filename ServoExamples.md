@@ -1,13 +1,16 @@
-## WebSerial Servo Examples
-![Servo Components](/images/servoComponents.jpg)
+# WebSerial Servo Examples
+These examples show various methods for controlling Servos from P5 using the [p5.webserial](https://github.com/gohai/p5.webserial) library. It sends the data a comma separated values to arduino.
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Connecting Servos to Arduino + Power](#connecting-servos-to-arduino--power)
-   1. [Prepare The Servo](#prepare-the-servo)
-3. [P5 Webserial Examples](#p5-webserial-examples)
-   1. [Example 1 - Mouse Position X Y to Servo Rotation](#example-1---mouse-position-x-y-to-servo-rotation)
-   2. [Example 2 - Mouse Position X](#example-2---mouse-position-x)
+- [Introduction](#introduction)
+- [Connecting Servos to Arduino + Power](#connecting-servos-to-arduino--power)
+  - [Prepare The Servo](#prepare-the-servo)
+  - [Circuit Powering from MicroUSB](#circuit-powering-from-microusb)
+  - [Circuit Powering from USB-C](#circuit-powering-from-usb-c)
+- [Arduino Code for Examples](#arduino-code-for-examples)
+- [P5 Webserial Examples](#p5-webserial-examples)
+  - [Example 1 - Mouse Position X Y to Servo Rotation](#example-1---mouse-position-x-y-to-servo-rotation)
+  - [Example 2 - Mouse Position X](#example-2---mouse-position-x)
 
 ## Introduction
 
