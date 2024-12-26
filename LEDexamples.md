@@ -54,11 +54,11 @@ These examples are based on the ['KnightRider'](https://canvascloud.ocadu.ca/cou
 
 If you don't still have the soldered protoboard, just connect the LEDs on a breadboard
 
-![Arduino Nano 33 - Knight Rider - protoboard](/images/Arduino-Nano-33-Knight-Rider-protoboard.GIF)
+![Arduino Nano 33 - Knight Rider - protoboard](/images/knightRiderProto.gif)
 
 If you need to rebuild the circuit on the breadboard, here's a simple circuit diagram:
 
-![ArduinoNano33IoT-KnightRider-bb-2LEDs](/images/ArduinoNano33IoT-KnightRider-bb-2LEDs_bb.png)
+![ArduinoNano33IoT-KnightRider-bb-2LEDs](/images/knightRiderBB.png)
 
 ## P5 Examples
 
