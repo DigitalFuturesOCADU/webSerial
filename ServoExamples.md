@@ -1,6 +1,14 @@
 ## WebSerial Servo Examples
 ![Servo Components](/images/servoComponents.jpg)
 
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Connecting Servos to Arduino + Power](#connecting-servos-to-arduino--power)
+   1. [Prepare The Servo](#prepare-the-servo)
+3. [P5 Webserial Examples](#p5-webserial-examples)
+   1. [Example 1 - Mouse Position X Y to Servo Rotation](#example-1---mouse-position-x-y-to-servo-rotation)
+   2. [Example 2 - Mouse Position X](#example-2---mouse-position-x)
+
 ## Introduction
 
 These examples will establish basic control and wiring methods used for controlling servo motors. This will include:
@@ -85,4 +93,3 @@ Controls:
 * X,Y position of mouse controls Servo Value on Click
 * When clicked the servo moves to the new angle in the amount of time specified by its servo?Speed value
 * A Servo class is created to manage the more complex controls
-
